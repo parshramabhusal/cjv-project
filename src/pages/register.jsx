@@ -20,7 +20,7 @@ const Register = () => {
   // };
 
   return (
-    <div className="bg-[#ededed] flex justify-center items-center h-screen">
+    <div className="bg-[#ededed] flex justify-center items-center h-[80vh] md:h-screen">
       <div className="w-1/2 h-screen hidden lg:block">
         <img 
           src="https://img.freepik.com/free-photo/movie-background-collage_23-2149876024.jpg" 
