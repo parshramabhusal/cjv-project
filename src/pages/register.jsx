@@ -2,23 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   password: '',
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData({ ...formData, [name]: value });
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Add your registration logic here (e.g., API call)
-  //   console.log('Form submitted:', formData);
-  // };
-
   return (
     <div className="bg-[#ededed] flex justify-center items-center h-[80vh] md:h-screen">
       <div className="w-1/2 h-screen hidden lg:block">

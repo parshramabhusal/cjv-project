@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 const Showdetails = () => {
-  const { id } = useParams(); // Get the movie ID from the URL
+  const { id } = useParams(); 
   const [shows, setShows] = useState(null);
 
   // Fetch movie details from the API

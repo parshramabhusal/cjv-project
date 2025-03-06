@@ -2,22 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SignIn = () => {
-//   const [formData, setFormData] = useState({
-//     email: '',
-//     password: '',
-//   });
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({ ...formData, [name]: value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     // Add your login logic here (e.g., API call)
-//     console.log('Form submitted:', formData);
-//   };
-
   return (
     <div className="bg-[#ededed] flex justify-center items-center h-[70vh] md:h-screen">
        
