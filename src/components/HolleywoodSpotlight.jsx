@@ -4,10 +4,10 @@ const HollywoodSpotlight = () => {
 
   return (
     <div className="bg-[#929baf] text-white py-12">
-      <div className="container mx-auto px-4 grid grid-cols-3 gap-16">
-        <div className='text-left'>
-          <h2 className="text-3xl font-bold mb-8">Hollywood Spotlight</h2>
-          <p className="text-[#ffffffc2] mb-12">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-16">
+        <div className='text-left w-full mb-12'>
+          <h2 className="text-3xl font-bold mb-4">Hollywood Spotlight</h2>
+          <p className="text-[#ffffffc2]">
             Dive into the world of Hollywood with exclusive content and exciting details.
           </p>
         </div>
