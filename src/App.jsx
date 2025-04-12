@@ -8,9 +8,9 @@ import MovieDetails from "./pages/moviedetails";
 import TVShows from "./pages/shows";
 import SignIn from "./pages/signin";
 import Register from "./pages/register";
-import UserProfile from "./pages/UserProfile"
+import UserProfile from "./pages/UserProfile";
 
- 
+
 const App = () => {
   return (
     <Router>

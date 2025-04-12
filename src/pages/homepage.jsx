@@ -61,7 +61,7 @@ const HomePage = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-gray-900 text-white p-4 flex items-center justify-between">
+      <header className="bg-gray-900 text-white p-4 flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between">
         <Link
           to="/"
           onClick={() => {
@@ -70,20 +70,21 @@ const HomePage = () => {
             setSearchTriggered(false);
           }}
         >
-          <h1 className="text-2xl font-bold cursor-pointer">Find Your Movies / Shows</h1>
+          <h1 className="text-2xl font-bold cursor-pointer text-center md:text-left">Find Your Movies / Shows</h1>
         </Link>
-        <div className="flex items-center">
+
+        <div className="relative flex w-full md:w-96">
           <input
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             onKeyDown={handleKeyPress}
             placeholder="Search by title..."
-            className="rounded px-4 py-2 text-black w-64"
+            className="w-full px-4 py-2 pr-16 text-black rounded-lg focus:outline-none"
           />
           <button
             onClick={handleSearch}
-            className="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded"
+            className="absolute right-1 top-1 bottom-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded-lg"
           >
             Search
           </button>
