@@ -7,7 +7,7 @@ const MovieDetails = () => {
 
   // Fetch movie details from the API
   useEffect(() => {
-    fetch(`https://cjv-project-api.onrender.com/movies/${Number(id)}`)
+    fetch(`https://movies-latest-ao07.onrender.com/media/${id}`)
       .then((response) => response.json())
       .then((data) => setMovie(data))
       .catch((error) => console.error('Error fetching movie details:', error));
@@ -23,16 +23,17 @@ const MovieDetails = () => {
       <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
       <div className="flex flex-col md:flex-row gap-8">
         <img
-          src={movie.posterUrl}
+          src={movie.imageURL}
           alt={movie.title}
           className="w-full md:w-1/3 h-64 object-cover rounded-lg"
         />
         <div className="flex-1">
           <p className="text-gray-700 mb-4">{movie.plot}</p>
-          <p className="text-gray-600"><strong>Year:</strong> {movie.year}</p>
-          <p className="text-gray-600"><strong>Genre:</strong> {movie.genres.join(', ')}</p>
-          <p className="text-gray-600"><strong>Actors:</strong> {movie.actors}</p>
-          <p className="text-gray-600"><strong>Runtime:</strong> {movie.runtime} minutes</p>
+          <p className="text-gray-600"><strong>Title:</strong> {movie.title}</p>
+          <p className="text-gray-600"><strong>Genres:</strong> {movie.genres.join(', ')}</p>
+          <p className="text-gray-600"><strong>Years:</strong> {movie.year}</p>
+          <p className="text-gray-600"><strong>Runtime:</strong> {movie.duration} </p>
+          <p className="text-gray-600"><strong>Description:</strong> {movie.description}</p>
         </div>
       </div>
     </div>

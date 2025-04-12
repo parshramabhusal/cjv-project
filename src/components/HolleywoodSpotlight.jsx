@@ -1,6 +1,6 @@
 import React from 'react';
-
-const HollywoodSpotlight = () => {
+const HollywoodSpotlight = () => 
+  {
 
   return (
     <div className="bg-[#929baf] text-white py-12">

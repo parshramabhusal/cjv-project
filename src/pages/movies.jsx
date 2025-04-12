@@ -5,7 +5,7 @@ const Movies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch('https://cjv-project-api.onrender.com/movies')
+    fetch('https://movies-latest-ao07.onrender.com/media/movies')
       .then(response => response.json())
       .then(data => setMovies(data), 0);
   }, []);

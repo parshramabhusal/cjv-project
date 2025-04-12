@@ -5,11 +5,11 @@ import Footer from "./components/footer";
 import Homepage from "./pages/homepage";
 import Movies from "./pages/movies";
 import MovieDetails from "./pages/moviedetails";
-import Showdetails from "./pages/showdetails";
 import TVShows from "./pages/shows";
 import SignIn from "./pages/signin";
 import Register from "./pages/register";
-import HeroSection from "./components/HeroSection";
+import UserProfile from "./pages/UserProfile"
+
  
 const App = () => {
   return (
@@ -20,9 +20,9 @@ const App = () => {
         <Route path="/movies" element={<Movies />} />
         <Route path="/shows" element={<TVShows />} />
         <Route path="/signin" element={<SignIn />} />
-        <Route path="/movies/:id" element={<MovieDetails />} />
-        <Route path="/shows/:id" element={<Showdetails />} />
+        <Route path="/media/:id" element={<MovieDetails />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/userprofile" element={<UserProfile />} />
       </Routes>
       <Footer/>
     </Router>

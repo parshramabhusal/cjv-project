@@ -5,7 +5,7 @@ const Shows = () => {
   const [tvShows, setTVShows] = useState([]);
 
   useEffect(() => {
-    fetch('https://cjv-project-api.onrender.com/tvShows')
+    fetch('https://movies-latest-ao07.onrender.com/media/tvshows')
       .then(response => response.json())
       .then(data => setTVShows(data), 0);
   }, []);
